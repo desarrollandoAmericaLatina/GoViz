@@ -46,50 +46,44 @@
 
     <div class="container">
 
-<!-- If not loged/registered -->
-		<div class="alert-message block-message warning">
+		<div class="alert-message block-message info">
 		  <a class="close" href="#">×</a>
-		  <h4>Howdy! you need to be registered or logged in to create something.</h4>
-		  <p> Please use your social accounts in order to have access to our features</p>
-		  <div class="alert-actions">
-		    <a class="btn small" href="login.html">Login</a> <a class="btn small" href="login.html">Register</a>
-		  </div>
+		  <h4>Remember!</h4>
+		  <p>We use only standard CSV files, please be sure your file is not bigger than 1mb</p>
 		</div>
 		<div class="row">
-			<div class="span4">
-				<h2>Upload/Import</h2>
-				<p>We use <a href="#" title="Link">CSV</a> files to create the visualizations, we can handle files up to 1Mb, you can upload it directly to our tool, or use your favorite host to import them.</p>
+			<div class="span8">
+				<h4>Upload</h4>
+				<form class="form-stacked">
+					<div class="clearfix">
+						<label for="fileInput">Select the file from your computer</label>
+						<div class="input">
+						  <input class="input-file" id="fileInput" name="fileInput" type="file">
+						</div>
+					</div>
+				</form>
 			</div>
-			<div class="span4">
-				<h2>Select</h2>
-				<p>You can select up to 5 colums of data and select special features for them such as:</p>
-				<ul>
-					<li>Geolocalization</li>
-					<li>General Information</li>
-					<li>Hard Data</li>
-					<li>Percentuale Data</li>
-				</ul>
+			<div class="span8">
+				<h4>Import</h4>
+				<p>You can import a CSV file direct from an URL or from one of our partner services</p>
+				<ul class="tabs">
+			        <li class="active"><a href="#">URL</a></li>
+			        <li><a href="#">Google Docs</a></li>
+			        <li><a href="#">Junar</a></li>
+			      </ul>
+				<form class="form-stacked">
+					<div class="clearfix">
+						<label for="xlInput">Paste here the URL where you have your file</label>
+						<div class="input">
+						  <input class="xlarge" id="xlInput" name="xlInput" size="30" type="text">
+						</div>
+					</div>
+				</form>
 			</div>
-			<div class="span4">
-				<h2>Configure</h2>
-				<p>Select your favorite visualization, add text, video or links to create a context for your data</p> 
-				<p>We provide you 3 mayors objectives to work with</p>
-				<ul>
-					<li>Geo Reference</li>
-					<li>Compare</li>
-					<li>Magnify</li>
-				</ul>
-			</div>
-			<div class="span4">
-				<h2>Publish</h2>
-				<p>Cheers! your data live now in a unique URL you can share or embed on your personal website or social accounts.</p>
-
-				<h3>So what are you waiting!</h3>
-				<a href="create_step1.html" class="btn large primary">Start Now!</a>
+			<div class="span16 aright">
+		        <a href="index.html" class="btn danger">Cancel</a> <a href="create_step2.html" class="btn large primary">Next Step »</a>
 			</div>
 		</div>
-<!-- If not loged/registered -->
-<!-- Else go to step 1 -->
 
       <footer>
         <p>&copy; Gobiz 2011</p>
